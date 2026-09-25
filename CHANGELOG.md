@@ -1,7 +1,7 @@
 # Changelog
 
-## 1.0.0
+## 2.0.0
 
 - Public repository for uCoz remote MCP
-- `server.json` for Official MCP Registry
+- Official MCP Registry listing (`io.github.ucoz-skills/ucoz-mcp`)
 - Client connection configs and docs

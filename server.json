@@ -3,7 +3,7 @@
   "name": "io.github.ucoz-skills/ucoz-mcp",
   "title": "uCoz",
   "description": "Manage uCoz sites from an AI assistant: templates, content, shop, users, and files.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "websiteUrl": "https://www.ucoz.com/ai/mcp",
   "repository": {
     "url": "https://github.com/ucoz-skills/ucoz-mcp",
