@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ucoz",
+  "displayName": "uCoz",
+  "version": "1.0.0",
+  "description": "Official uCoz remote MCP: authorize via Control Panel, select or create a site, manage templates, content, shop, users, and site files.",
+  "author": {
+    "name": "uCoz",
+    "email": "support@ucoz.com"
+  },
+  "homepage": "https://www.ucoz.com/ai/mcp",
+  "repository": "https://github.com/ucoz-skills/ucoz-mcp",
+  "license": "MIT",
+  "keywords": ["ucoz", "mcp", "website", "templates", "shop", "cms"]
+}
