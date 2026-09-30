@@ -21,7 +21,7 @@ More clients: [`clients/`](clients/). Step-by-step: [`docs/connect.md`](docs/con
 
 ## What this is
 
-Remote MCP for uCoz: connect Cursor, Claude, ChatGPT/Codex, VS Code, and other MCP clients to your account — pick or create a site, then manage templates, content, shop, users, and site files.
+Remote MCP for uCoz: connect Cursor, Claude, ChatGPT/Codex, VS Code, and other MCP clients to your account — pick or create a site, then manage templates, content, shop, users, site files, and server-side apps.
 
 - **MCP URL:** `https://www.ucoz.com/mcp`
 - **Transport:** Remote HTTP
@@ -31,7 +31,7 @@ Remote MCP for uCoz: connect Cursor, Claude, ChatGPT/Codex, VS Code, and other M
 
 ## What the agent can do
 
-After Control Panel authorization: account tools (`list_sites`, `select_site`, `create_site`) and site tools — templates and pages, Template Maker, content modules, shop, subscriptions, users, modules/quarantine, site files (`files_tool`), FTP password management only (`ftp_tool`).
+After Control Panel authorization: account tools (`list_sites`, `select_site`, `create_site`) and site tools — templates and pages, Template Maker, content modules, shop, subscriptions, users, modules/quarantine, site files (`files_tool`), FTP password management only (`ftp_tool`), and a scripts environment for PHP, Node.js, and Python apps with MySQL, cron, and backups (`apps_tool`).
 
 Full list: [`docs/tools.md`](docs/tools.md). Example prompts: [`docs/prompts.md`](docs/prompts.md).
 

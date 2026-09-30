@@ -7,4 +7,6 @@
 - List products with stock below five.
 - List files in the site root and show quota.
 - Check indexing quarantine status; explain what unlock would do — do not change anything yet.
+- Check whether the scripts environment is on and show what's already running.
+- Prepare a simple Node.js app and tell me the address where it will open.
 - Recommend an official skill for building a landing page, then install it if I confirm.
