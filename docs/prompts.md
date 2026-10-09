@@ -10,3 +10,4 @@
 - Check whether the scripts environment is on and show what's already running.
 - Prepare a simple Node.js app and tell me the address where it will open.
 - Recommend an official skill for building a landing page, then install it if I confirm.
+- Use the server scripts skill to add a contact form that saves leads to MySQL and sends them to Telegram.

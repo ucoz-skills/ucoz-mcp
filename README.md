@@ -37,7 +37,7 @@ Full list: [`docs/tools.md`](docs/tools.md). Example prompts: [`docs/prompts.md`
 
 ## Agent Skills
 
-Official playbooks live in **[ucoz-skills/agent-skills](https://github.com/ucoz-skills/agent-skills)** (also IDE plugins). This repository is the MCP connect / catalog surface.
+Official playbooks live in **[ucoz-skills/agent-skills](https://github.com/ucoz-skills/agent-skills)** (also IDE plugins): landing pages, ad landings, shop optimization, translation, redesign, original templates, and server scripts. List: [`skills/README.md`](skills/README.md). This repository is the MCP connect / catalog surface.
 
 ## Related links
 
