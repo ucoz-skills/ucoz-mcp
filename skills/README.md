@@ -18,6 +18,6 @@ That repository also ships IDE plugins (Cursor, Codex, Claude, Antigravity). Con
 | [ucoz-site-translator-skill](https://github.com/ucoz-skills/agent-skills/tree/main/skills/ucoz-site-translator-skill) | Content translation and localization |
 | [ucoz-design-editor-skill](https://github.com/ucoz-skills/agent-skills/tree/main/skills/ucoz-design-editor-skill) | Redesign and restyling of an existing site |
 | [ucoz-template-creator-skill](https://github.com/ucoz-skills/agent-skills/tree/main/skills/ucoz-template-creator-skill) | Original site-wide templates |
-| [ucoz-server-scripts-skill](https://github.com/ucoz-skills/agent-skills/tree/main/skills/ucoz-server-scripts-skill) | Backend features in Server Scripts (`apps_tool`): PHP, Node.js, Python, MySQL, cron |
+| [ucoz-server-scripts-skill](https://github.com/ucoz-skills/agent-skills/tree/main/skills/ucoz-server-scripts-skill) | Backend features in Server Scripts (`apps_read` / `apps_write` / `apps_delete`): PHP, Node.js, Python, MySQL, cron |
 
 Versions and install commands: [agent-skills README](https://github.com/ucoz-skills/agent-skills#available-skills).
