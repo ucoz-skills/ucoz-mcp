@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ucoz",
   "displayName": "uCoz",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Official uCoz remote MCP: authorize via Control Panel, select or create a site, manage templates, content, shop, users, and site files.",
   "author": {
     "name": "uCoz",

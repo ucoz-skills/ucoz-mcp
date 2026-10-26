@@ -31,7 +31,7 @@ Remote MCP for uCoz: connect Cursor, Claude, ChatGPT/Codex, VS Code, and other M
 
 ## What the agent can do
 
-After Control Panel authorization: account tools (`list_sites`, `select_site`, `create_site`) and site tools split into read, write, and delete — templates and pages, Template Maker, content modules, forum, shop, subscriptions, users, settings, modules/quarantine, site files (`files_read` / `files_write` / `files_delete`, including direct binary upload), FTP password management only (`ftp_tool`), and a scripts environment for PHP, Node.js, and Python apps with MySQL, cron, and backups (`apps_read` / `apps_write` / `apps_delete`).
+After Control Panel authorization: account tools (`list_sites`, `select_site`, `create_site`) and site tools split into read, write, and delete — templates and pages, Template Maker, content modules, forum, shop, subscriptions, users, settings, modules/quarantine, site files (`files_read` / `files_write` / `files_delete`, including direct binary upload), FTP password management only (`ftp_read` / `ftp_write` / `ftp_delete`), and a scripts environment for PHP, Node.js, and Python apps with MySQL, cron, and backups (`apps_read` / `apps_write` / `apps_delete`).
 
 Full list: [`docs/tools.md`](docs/tools.md). Example prompts: [`docs/prompts.md`](docs/prompts.md).
 
