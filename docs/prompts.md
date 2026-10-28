@@ -12,3 +12,4 @@
 - Recommend an official skill for building a landing page, then install it if I confirm.
 - Use the server scripts skill to add a contact form that saves leads to MySQL and sends them to Telegram.
 - Use the content manager skill to write a blog post with a cover image and SEO fields, then show me the public page.
+- Use the popup design skill to make the site's popups and notifications match its colors (back up the template first).
