@@ -4,7 +4,7 @@ Live schemas come from the remote MCP at `https://www.ucoz.com/mcp`. Prefer the 
 
 Each area is split into read, write, and delete tools. Map the call to the tool that matches the action. Deletes and other irreversible actions need `confirm: true`.
 
-**Server tools (41):** `list_sites`, `select_site`, `create_site`, `templates_read`, `templates_write`, `templates_delete`, `tmaker_read`, `tmaker_write`, `tmaker_publish`, `tmaker_delete`, `content_read`, `content_write`, `content_delete`, `forum_read`, `forum_write`, `forum_delete`, `shop_read`, `shop_write`, `shop_delete`, `subscriptions_read`, `subscriptions_write`, `subscriptions_delete`, `users_read`, `users_write`, `users_delete`, `modules_read`, `modules_write`, `modules_uninstall`, `files_read`, `files_write`, `files_delete`, `settings_read`, `settings_write`, `ftp_read`, `ftp_write`, `ftp_delete`, `apps_read`, `apps_write`, `apps_delete`, `skills_tool`, `docs_tool`.
+**Server tools (44):** `list_sites`, `select_site`, `create_site`, `templates_read`, `templates_write`, `templates_delete`, `tmaker_read`, `tmaker_write`, `tmaker_publish`, `tmaker_delete`, `content_read`, `content_write`, `content_delete`, `forum_read`, `forum_write`, `forum_delete`, `shop_read`, `shop_write`, `shop_delete`, `subscriptions_read`, `subscriptions_write`, `subscriptions_delete`, `users_read`, `users_write`, `users_delete`, `modules_read`, `modules_write`, `modules_uninstall`, `files_read`, `files_write`, `files_delete`, `settings_read`, `settings_write`, `signs_read`, `signs_write`, `signs_delete`, `ftp_read`, `ftp_write`, `ftp_delete`, `apps_read`, `apps_write`, `apps_delete`, `skills_tool`, `docs_tool`.
 
 ## Account
 
@@ -30,6 +30,7 @@ Most site tools require `select_site` (or a successful `create_site`) first.
 | `modules_read` / `modules_write` / `modules_uninstall` | Install and enable modules, uAPI toggles, quarantine. Uninstall is `modules_uninstall` and needs `confirm: true` |
 | `files_read` / `files_write` / `files_delete` | Site file manager via `/uapi/files` (list, read/write text, upload, mkdir, rename, move, delete, quota) |
 | `settings_read` / `settings_write` | Module settings. Secret values are masked |
+| `signs_read` / `signs_write` / `signs_delete` | Standard site captions (Control Panel "Replace standard captions"): module names, form field labels, buttons, list titles, dates. `signs_reset` needs `confirm: true` when the site owner requires it |
 | `ftp_read` / `ftp_write` / `ftp_delete` | Site FTP password only. `ftp_password_get` returns host, port, user, and whether a password is set. `ftp_password_set` and `ftp_password_change` need `confirm: true`; the reply does not include the password. `ftp_password_reset` removes it and needs `confirm: true`. Not file transfer |
 | `apps_read` / `apps_write` / `apps_delete` | Scripts and apps: a separate server environment for PHP, Node.js, and Python apps, with its own files, MySQL databases, cron jobs, FTP accounts, and backups |
 | `skills_tool` | Resolve / catalog / install official agent skills; usage accounting |
@@ -46,6 +47,14 @@ Bind the `upload_id` on the next call:
 - product photos: `shop_write` `action=img_add` with `image_upload_id` / `image_upload_ids`
 
 `content_base64` / `image_base64` still exist, but a long base64 body is truncated. Prefer `upload_direct`.
+
+### Standard captions
+
+`signs_read` `signs_groups` lists the caption groups (`modules`, `users`, `news`, `publ`, `blog`, `shop`, `datetime`, …) with an `active` flag; groups of inactive modules are listed too. `signs_list` returns each caption with `id`, current `value`, `default` and `customized`; filter by `group`, `ids` or `customized: true`.
+
+`signs_write` `signs_update` takes `signs: {"<id>": "<text>"}`. Texts are at most 150 characters, HTML is allowed and output as is, and the change is live at once. The call saves all captions or none: an unknown id or a long text fails the whole call. An empty text restores the default. `signs_delete` `signs_reset` restores defaults by `ids` / `group`, or every caption with `all: true`; the site's own texts are lost.
+
+The names of entry fields in `content_read fields` come partly from these captions (`title`, `other1..5`). The visible module name comes from module settings (`settings_*` `name`), not from the `modules` captions.
 
 ### Files vs FTP
 
