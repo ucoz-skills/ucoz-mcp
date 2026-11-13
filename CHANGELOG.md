@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.3.0
+
+- Document 44 server tools
+- Add `signs_read`, `signs_write`, and `signs_delete` for standard site captions
+
 ## 2.2.0
 
 - Document 41 server tools
