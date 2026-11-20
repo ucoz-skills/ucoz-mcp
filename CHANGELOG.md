@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.4.0
+
+- Document 41 server tools: `ftp_read`, `ftp_write` and `ftp_delete` are removed; FTP access is set up in the Control Panel
+- No tool accepts or returns passwords or access keys: user creation and password changes, database users, FTP accounts and DirectAdmin login key creation moved to the Control Panel; secret environment variables and access keys in settings are refused
+- Shop: no basket, checkout or balance actions; order replies carry no access keys, payment links or digital goods content
+- Subscriptions: no renewal, resume or payment confirmation; tools describe members' access management
+- Informers in the template tools: `informer_list`, `informer_get`, `informer_create`, `informer_update`, `informer_delete`
+
 ## 2.3.0
 
 - Document 44 server tools
