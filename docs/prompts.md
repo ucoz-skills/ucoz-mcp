@@ -13,4 +13,5 @@
 - Use the server scripts skill to add a contact form that saves leads to MySQL and sends them to Telegram.
 - Use the content manager skill to write a blog post with a cover image and SEO fields, then show me the public page.
 - Show the standard captions of the news module and which of them the site changed.
+- List the site informers, create a news informer with the five latest entries and tell me which code to put into the template.
 - Use the popup design skill to make the site's popups and notifications match its colors (back up the template first).
